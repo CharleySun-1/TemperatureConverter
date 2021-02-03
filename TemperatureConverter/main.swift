@@ -8,11 +8,17 @@
 import Foundation
 
 // Functions
+/// Converts celsius to fahrenheit
+/// - Parameter celsius: the most used temperature system
+/// - Returns: the formula
 func celsiusToFahrenheit(celsius: Double) -> Double {
     
     return celsius * 1.8 + 32
     
 }
+/// Converts fahrenheit to celsius
+/// - Parameter fahrenheit: a less used temperature system
+/// - Returns: the formula
 func fahrenheitToCelsius(fahrenheit: Double) -> Double {
     
     return (fahrenheit - 30) / 2
@@ -24,10 +30,10 @@ func fahrenheitToCelsius(fahrenheit: Double) -> Double {
 print("Temperature Converter")
 print("=====================")
 print("")
-print("Which one do you want to convert.?")
+print("Which one do you want to convert? ")
 print("")
-print("1 - Celsius to fahrenheit")
-print("2 - Fahrenheit to celsius")
+print("1 - Celsius to Fahrenheit")
+print("2 - Fahrenheit to Celsius")
 print("")
 print("Q - Quit program")
 print("")
@@ -38,7 +44,7 @@ switch type {
 case "1":
        
     // Input
-        print("You selected celsius to fahrenheit.")
+        print("You selected Celsius to Fahrenheit.")
         print("")
     let givenCelsius = Double.collectInput(withPrompt: "Please enter the temperature you want to convert: ", minimum: 0, maximum: nil)
        
@@ -46,12 +52,12 @@ case "1":
     let result = celsiusToFahrenheit(celsius: givenCelsius)
    
     // Output
-        print("It is \(result) fahrenheit.")
+        print("It is \(result) Fahrenheit.")
 
 case "2":
    
     // Input
-        print("You selected fahrenheit to celsius.")
+        print("You selected Fahrenheit to Celsius.")
         print("")
     let givenFahrenheit = Double.collectInput(withPrompt: "Please enter the temperature you want to convert: ", minimum: 0, maximum: nil)
        
@@ -59,8 +65,11 @@ case "2":
     let result = fahrenheitToCelsius(fahrenheit: givenFahrenheit)
    
     // Output
-        print("It is \(result) celsius.")
-    
+        print("It is \(result) Celsius.")
+
+case "Q":
+    exit(0)
+
 default:
     print("Please enter a valid option.")
     
