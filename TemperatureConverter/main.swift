@@ -30,6 +30,8 @@ func temperatureConverter(from: String, to: String, value: Double) -> String {
         isFahrenheit = true
     case "3":
         isKelvin = true
+    case "Q":
+        exit(0)
     default:
         break
     }
@@ -41,6 +43,8 @@ func temperatureConverter(from: String, to: String, value: Double) -> String {
         convertToFahrenheit = true
     case "3":
         convertToKelvin = true
+    case "Q":
+        exit(0)
     default:
         break
     }
@@ -79,17 +83,19 @@ func temperatureConverter(from: String, to: String, value: Double) -> String {
 }
 
 //Input
-print("Temperature Converter")
-print("=====================")
-print("")
-print("Which one do you want to convert from? ")
-print("")
-print("1 - Celsius")
-print("2 - Fahrenheit")
-print("3 - Kelvin")
-print("")
-print("Q - Quit program")
-print("")
+print ("""
+Temperature Converter
+=====================
+
+Which one do you want to convert from?
+
+1 - Celsius
+2 - Fahrenheit
+3 - Kelvin
+
+Q - Quit program
+
+""")
 
 // Asking the users what temperature system they want to convert from.
 let from = String.collectInput(withPrompt: "Please enter the system you want to convert from (1/2/3/Q): ", acceptableValues: ["1", "2", "3", "Q"])
