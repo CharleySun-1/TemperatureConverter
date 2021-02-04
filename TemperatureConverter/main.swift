@@ -51,7 +51,24 @@ func temperatureConverter(from: String, to: String, value: Double) -> String {
     
     if isFahrenheit {
         if convertToCelsius == true {
+            return String((value - 32) * 1.8)
+        } else if convertToFahrenheit == true {
+            return String(value)
+        } else if convertToKelvin == true {
+            return String((value - 32) * 1.8 + 273.15)
+        }
     }
+    
+    if isKelvin {
+        if convertToCelsius == true {
+            return String(value - 273.15)
+        } else if convertToFahrenheit == true {
+            return String((value - 273.15) * 1.8 + 32 )
+        } else if convertToKelvin == true {
+            return String(value)
+        }
+    }
+   
     return "impossible"
 }
 
@@ -72,7 +89,7 @@ print("")
 let from = String.collectInput(withPrompt: "Please enter your selection (1/2/3/Q):  ", acceptableValues: ["1", "2", "3", "Q"])
 
 // Asking the users what value they want to convert.
-let value = Double.collectInput(withPrompt: "Please enter the degree you want to convert.", minimum: nil, maximum: nil)
+let value = Double.collectInput(withPrompt: "Please enter the degrees you want to convert.", minimum: nil, maximum: nil)
 
 // Asking the users what temperature system they want to convert to.
 let to = String.collectInput(withPrompt: "Please enter your selection (1/2/3/Q):  ", acceptableValues: ["1", "2", "3", "Q"])
@@ -80,7 +97,6 @@ let to = String.collectInput(withPrompt: "Please enter your selection (1/2/3/Q):
 //Process
 
 
-
-print(temperatureConverter(from: from, to: to, value: value))
-
+let result = temperatureConverter(from: from, to: to, value: value)
+print("The result is \(result) degrees.")
 
