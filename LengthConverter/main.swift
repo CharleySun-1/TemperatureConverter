@@ -77,39 +77,127 @@ func temperatureConverter(from: String, to: String, value: Double) -> String {
         if convertToCentimetre == true {
             return String(value)
         } else if  convertToMetre == true {
-            return String(value / 100)
+            return String(value * 100)
         } else if convertToKilometre {
-            return String(value / 100000)
+            return String(value * 100000)
         } else if convertToMile {
-            return String(value / 160934)
+            return String(value * 160934)
         } else if convertToInch {
-            return String(value / 2.54)
+            return String(value * 2.54)
         } else if convertToFoot {
-            return String(value / 30.48)
+            return String(value * 30.48)
         } else if convertToYard {
-            return String(value / 91.44)
+            return String(value * 91.44)
         }
     }
     
-    if isFahrenheit {
-        if convertToCelsius == true {
-            return String((value - 32) / 1.8)
-        } else if convertToFahrenheit == true {
+    if isMetre {
+        if convertToCentimetre == true {
+            return String(value / 100)
+        } else if  convertToMetre == true {
             return String(value)
-        } else if convertToKelvin == true {
-            return String((value - 32) * 1.8 + 273.15)
+        } else if convertToKilometre {
+            return String(value * 1000)
+        } else if convertToMile {
+            return String(value / 1609)
+        } else if convertToInch {
+            return String(value * 39.3701)
+        } else if convertToFoot {
+            return String(value * 3.28084)
+        } else if convertToYard {
+            return String(value * 1.094)
         }
     }
     
-    if isKelvin {
-        if convertToCelsius == true {
-            return String(value - 273.15)
-        } else if convertToFahrenheit == true {
-            return String((value - 273.15) * 1.8 + 32 )
-        } else if convertToKelvin == true {
+     if isKilometre {
+        if convertToCentimetre == true {
+            return String(value / 100000)
+        } else if  convertToMetre == true {
+            return String(value / 1000)
+        } else if convertToKilometre {
             return String(value)
+        } else if convertToMile {
+            return String(value / 1.609)
+        } else if convertToInch {
+            return String(value * 39370)
+        } else if convertToFoot {
+            return String(value * 3281)
+        } else if convertToYard {
+            return String(value * 1094)
         }
     }
+   
+    if isMile {
+       if convertToCentimetre == true {
+           return String(value * 160934)
+       } else if  convertToMetre == true {
+           return String(value * 1609)
+       } else if convertToKilometre {
+           return String(value * 1.609)
+       } else if convertToMile {
+           return String(value)
+       } else if convertToInch {
+           return String(value * 63360)
+       } else if convertToFoot {
+           return String(value * 5280)
+       } else if convertToYard {
+           return String(value * 1760)
+       }
+   }
+   
+    if isInch {
+       if convertToCentimetre == true {
+           return String(value * 2.54)
+       } else if  convertToMetre == true {
+           return String(value / 39.37)
+       } else if convertToKilometre {
+           return String(value / 39370)
+       } else if convertToMile {
+           return String(value / 63360)
+       } else if convertToInch {
+           return String(value)
+       } else if convertToFoot {
+           return String(value / 12)
+       } else if convertToYard {
+           return String(value / 36)
+       }
+   }
+    
+    if isFoot {
+       if convertToCentimetre == true {
+           return String(value * 30.48)
+       } else if  convertToMetre == true {
+           return String(value / 3.281)
+       } else if convertToKilometre {
+           return String(value / 3281)
+       } else if convertToMile {
+           return String(value / 5280)
+       } else if convertToInch {
+           return String(value * 12)
+       } else if convertToFoot {
+           return String(value)
+       } else if convertToYard {
+           return String(value / 3)
+       }
+   }
+    
+    if isYard {
+       if convertToCentimetre == true {
+           return String(value * 91.44)
+       } else if  convertToMetre == true {
+           return String(value / 1.094)
+       } else if convertToKilometre {
+           return String(value / 1094)
+       } else if convertToMile {
+           return String(value / 1760)
+       } else if convertToInch {
+           return String(value * 36)
+       } else if convertToFoot {
+           return String(value * 3)
+       } else if convertToYard {
+           return String(value)
+       }
+   }
    
     return "impossible"
 }
