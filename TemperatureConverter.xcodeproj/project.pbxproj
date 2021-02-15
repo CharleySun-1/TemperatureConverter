@@ -87,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				8C75F7C425DB158B00505F38 /* Enumeration.swift */,
-				8C43F72725CB0C4800629F3C /* Functions.swift */,
 				8C96693E25C9EAB500877763 /* Extensions.swift */,
+				8C43F72725CB0C4800629F3C /* Functions.swift */,
 				8C96693525C9EA1300877763 /* TemperatureConverter */,
 				8C75F7B325DB152A00505F38 /* TemperatureConverterApp */,
 				8C96693425C9EA1300877763 /* Products */,
@@ -156,7 +156,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					8C75F7B125DB152A00505F38 = {
 						CreatedOnToolsVersion = 12.4;
@@ -388,6 +388,7 @@
 		8C96693B25C9EA1300877763 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93SKHWY4QD;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -399,6 +400,7 @@
 		8C96693C25C9EA1300877763 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93SKHWY4QD;
 				ENABLE_HARDENED_RUNTIME = YES;

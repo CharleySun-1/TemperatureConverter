@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum temperatureUnit: String {
+enum TemperatureUnit: String {
     case celsius = "°C"
     case fahrenheit = "°F"
     case kelvin = "°K"
