@@ -8,15 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8C43F72825CB0C4800629F3C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43F72725CB0C4800629F3C /* Functions.swift */; };
-		8C43F73125CB0CFE00629F3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43F73025CB0CFE00629F3C /* main.swift */; };
-		8C43F73725CB0D1100629F3C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96693E25C9EAB500877763 /* Extensions.swift */; };
-		8C43F73A25CB0D1400629F3C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43F72725CB0C4800629F3C /* Functions.swift */; };
 		8C75F7B525DB152B00505F38 /* TemperatureConverterAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75F7B425DB152B00505F38 /* TemperatureConverterAppApp.swift */; };
 		8C75F7B725DB152B00505F38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75F7B625DB152B00505F38 /* ContentView.swift */; };
 		8C75F7B925DB152F00505F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C75F7B825DB152F00505F38 /* Assets.xcassets */; };
 		8C75F7BC25DB152F00505F38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C75F7BB25DB152F00505F38 /* Preview Assets.xcassets */; };
 		8C75F7C525DB158B00505F38 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75F7C425DB158B00505F38 /* Enumeration.swift */; };
-		8C75F7C625DB158B00505F38 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75F7C425DB158B00505F38 /* Enumeration.swift */; };
 		8C75F7CA25DB15AD00505F38 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75F7C425DB158B00505F38 /* Enumeration.swift */; };
 		8C75F7CE25DB15B200505F38 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43F72725CB0C4800629F3C /* Functions.swift */; };
 		8C96693725C9EA1300877763 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96693625C9EA1300877763 /* main.swift */; };
@@ -24,15 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8C43F72C25CB0CFE00629F3C /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		8C96693125C9EA1300877763 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,8 +33,6 @@
 
 /* Begin PBXFileReference section */
 		8C43F72725CB0C4800629F3C /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-		8C43F72E25CB0CFE00629F3C /* LengthConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LengthConverter; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C43F73025CB0CFE00629F3C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8C75F7B225DB152A00505F38 /* TemperatureConverterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureConverterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C75F7B425DB152B00505F38 /* TemperatureConverterAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConverterAppApp.swift; sourceTree = "<group>"; };
 		8C75F7B625DB152B00505F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,13 +46,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8C43F72B25CB0CFE00629F3C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8C75F7AF25DB152A00505F38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,14 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8C43F72F25CB0CFE00629F3C /* LengthConverter */ = {
-			isa = PBXGroup;
-			children = (
-				8C43F73025CB0CFE00629F3C /* main.swift */,
-			);
-			path = LengthConverter;
-			sourceTree = "<group>";
-		};
 		8C75F7B325DB152A00505F38 /* TemperatureConverterApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +90,6 @@
 				8C43F72725CB0C4800629F3C /* Functions.swift */,
 				8C96693E25C9EAB500877763 /* Extensions.swift */,
 				8C96693525C9EA1300877763 /* TemperatureConverter */,
-				8C43F72F25CB0CFE00629F3C /* LengthConverter */,
 				8C75F7B325DB152A00505F38 /* TemperatureConverterApp */,
 				8C96693425C9EA1300877763 /* Products */,
 			);
@@ -130,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				8C96693325C9EA1300877763 /* TemperatureConverter */,
-				8C43F72E25CB0CFE00629F3C /* LengthConverter */,
 				8C75F7B225DB152A00505F38 /* TemperatureConverterApp.app */,
 			);
 			name = Products;
@@ -147,23 +115,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8C43F72D25CB0CFE00629F3C /* LengthConverter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8C43F73225CB0CFE00629F3C /* Build configuration list for PBXNativeTarget "LengthConverter" */;
-			buildPhases = (
-				8C43F72A25CB0CFE00629F3C /* Sources */,
-				8C43F72B25CB0CFE00629F3C /* Frameworks */,
-				8C43F72C25CB0CFE00629F3C /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LengthConverter;
-			productName = LengthConverter;
-			productReference = 8C43F72E25CB0CFE00629F3C /* LengthConverter */;
-			productType = "com.apple.product-type.tool";
-		};
 		8C75F7B125DB152A00505F38 /* TemperatureConverterApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C75F7C025DB152F00505F38 /* Build configuration list for PBXNativeTarget "TemperatureConverterApp" */;
@@ -207,9 +158,6 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					8C43F72D25CB0CFE00629F3C = {
-						CreatedOnToolsVersion = 12.3;
-					};
 					8C75F7B125DB152A00505F38 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -232,7 +180,6 @@
 			projectRoot = "";
 			targets = (
 				8C96693225C9EA1300877763 /* TemperatureConverter */,
-				8C43F72D25CB0CFE00629F3C /* LengthConverter */,
 				8C75F7B125DB152A00505F38 /* TemperatureConverterApp */,
 			);
 		};
@@ -251,17 +198,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8C43F72A25CB0CFE00629F3C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C43F73125CB0CFE00629F3C /* main.swift in Sources */,
-				8C43F73725CB0D1100629F3C /* Extensions.swift in Sources */,
-				8C43F73A25CB0D1400629F3C /* Functions.swift in Sources */,
-				8C75F7C625DB158B00505F38 /* Enumeration.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8C75F7AE25DB152A00505F38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,28 +223,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8C43F73325CB0CFE00629F3C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 93SKHWY4QD;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		8C43F73425CB0CFE00629F3C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 93SKHWY4QD;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		8C75F7BE25DB152F00505F38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -496,15 +410,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8C43F73225CB0CFE00629F3C /* Build configuration list for PBXNativeTarget "LengthConverter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8C43F73325CB0CFE00629F3C /* Debug */,
-				8C43F73425CB0CFE00629F3C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8C75F7C025DB152F00505F38 /* Build configuration list for PBXNativeTarget "TemperatureConverterApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
