@@ -73,7 +73,9 @@ struct ContentView: View {
                 }
 
             }
-            .navigationTitle("Temperature Converter")
+            .navigationTitle("Temp Converter")
+            
+            
             
         }
         
